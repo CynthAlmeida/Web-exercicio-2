@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro de Automóveis</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados do Veículo</legend>
+            Tipo do Veículo: 
+            <select id="tipo_veiculo" name="tipo_veiculo" required>
+                <option value="novo">Novo</option>
+                <option value="usado">Usado</option>
+            </select>
+            Categoria: 
+            <select id="categoria" name="categoria" required>
+                <option value="hatch">Hatch</option>
+                <option value="suv">SUV</option>
+                <option value="sedan">Sedã</option>
+                <option value="picape">Picape</option>
+                <option value="utilitario">Utilitário</option>
+                <option value="perua">Perua</option>
+                <option value="minivan">Minivan</option>
+                <option value="conversivel">Conversível</option>
+                <option value="outros">Outros</option>
+            </select>
+            Fabricante: 
+            <select id="fabricante" name="fabricante" required>
+                <option value="fiat">Fiat</option>
+                <option value="ford">Ford</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="volkswagen">Volkswagen</option>
+                <option value="citroen">Citroën</option>
+                <option value="renault">Renault</option>
+                <option value="kia">Kia</option>
+                <option value="outros">Outros</option>
+            </select>
+            Modelo: <input type="text" id="modelo" name="modelo" required><br>
+            Quilometragem: <input type="number" id="quilometragem" name="quilometragem" required>
+            Preço: <input type="text" id="preco" name="preco" required>
+            Placa: <input type="text" id="placa" name="placa" required><br>
+            Câmbio: 
+            <select id="cambio" name="cambio" required>
+                <option value="manual">Manual</option>
+                <option value="automatico">Automático</option>
+            </select>
+            Blindagem: 
+            <select id="blindagem" name="blindagem" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            Número de Portas: <input type="number" id="numero_portas" name="numero_portas" required><br>
+            Combustível: 
+            <select id="combustivel" name="combustivel" required>
+                <option value="etanol">Etanol</option>
+                <option value="gasolina">Gasolina</option>
+                <option value="diesel">Diesel</option>
+                <option value="flex">Flex</option>
+                <option value="outros">Outros</option>
+            </select><br>
+            Foto: <input type="file" id="foto" name="foto" accept="image/*" required><br>
+            Descrição: <br> 
+            <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea><br>
+        </fieldset>
